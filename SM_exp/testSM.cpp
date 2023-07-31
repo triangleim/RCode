@@ -242,11 +242,11 @@ int main(int argc, char *argv[])
     for (const string &f : groFiles)
     {
         // string idname = groIDDirect + f.substr(f.find_last_of('_'), f.find_last_of('.')-f.find_last_of('_'))+"_newID.txt";
-        int idx = f.find(name);       //在aa中查找bb.
+        int idx = f.find(name);       //
         // cout<<name<<flush;
         if (idx != std::string::npos) //不存在。
         {
-            int idx = f.find(".l");       //在aa中查找bb.
+            int idx = f.find(".l");       //
             if (idx != std::string::npos) //不存在。
                 continue;
             auto edge_vec = load_graph(f);

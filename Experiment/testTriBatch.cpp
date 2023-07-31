@@ -68,8 +68,8 @@ int main(int argc, char **argv)
         utils::read_directory(groDirect, groFiles);
         for (const string &f : groFiles)
         {
-            int idx = f.find(name);       // 在aa中查找bb.
-            if (idx != std::string::npos) // 不存在。
+            int idx = f.find(name);       // 
+            if (idx != std::string::npos) // 
             {
                 hashGraph HG(G, N, f, M);
                 double GROT = 0;
